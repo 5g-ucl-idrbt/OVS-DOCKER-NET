@@ -23,7 +23,7 @@ sudo docker tag <Image-ID> host:latest
 ```
 ### Ryu (@Aviraj Add Ryu image here)
 
-## Fireup the containers
+# Fireup the containers
 `sudo docker-compose up -d`
 Creates two host container named `h1`, `h2` and `h3`.
 It additionally creates `s1`,`ovsdb-server`, and `ryu` controller.
