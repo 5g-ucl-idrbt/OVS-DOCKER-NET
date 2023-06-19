@@ -1,19 +1,27 @@
 # Build Containers
-## OVS
+### OVS
 `sudo docker pull openvswitch/ovs:2.11.2_debian`
 `sudo docker tag openvswitch/ovs:2.11.2_debian openvswitch/ovs:latest`
-## RYU
+### RYU
 `sudo docker pull osrg/ryu`
-## Host
+### Host
 `sudo docker build -f Dockerfile.Ubuntu -t host:latest .`
 # Download and use containers
-## OVS
+### OVS
 ```	
 cd components/ovs-container 
 cat ovs.tar.a? > ovs.tar
 sudo docker load --input ovs.tar
-sudo docker tag <Image-ID> penvswitch/ovs:latest
+sudo docker tag <Image-ID> openvswitch/ovs:latest
 ```
+### host
+```	
+cd components/host-container 
+cat host.tar.a? > host.tar
+sudo docker load --input host.tar
+sudo docker tag <Image-ID> host:latest
+```
+### Ryu (@Aviraj Add Ryu image here)
 
 ## Fireup the containers
 `sudo docker-compose up -d`
