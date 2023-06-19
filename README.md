@@ -24,8 +24,9 @@ sudo docker tag <Image-ID> host:latest
 ### Ryu 
 ```
 cd components/host-container
-cat host.tar.a? > host.tar
-
+cat ryu:latest.tar.parta? >  ryu:latest.tar
+sudo docker load --input ryu:latest.tar
+sudo docker tag <Image-ID> ryu:latest
 ```
 
 # Fireup the containers
