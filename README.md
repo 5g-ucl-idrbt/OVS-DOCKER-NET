@@ -6,6 +6,15 @@
 `sudo docker pull osrg/ryu`
 ## Host
 `sudo docker build -f Dockerfile.Ubuntu -t host:latest .`
+# Download and use containers
+## OVS
+```	
+cd components/ovs-container 
+cat ovs.tar.a? > ovs.tar
+sudo docker load --input ovs.tar
+sudo docker tag <Image-ID> penvswitch/ovs:latest
+```
+
 ## Fireup the containers
 `sudo docker-compose up -d`
 Creates two host container named `h1`, `h2` and `h3`.
