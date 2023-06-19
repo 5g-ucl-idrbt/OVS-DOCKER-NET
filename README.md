@@ -21,7 +21,12 @@ cat host.tar.a? > host.tar
 sudo docker load --input host.tar
 sudo docker tag <Image-ID> host:latest
 ```
-### Ryu (@Aviraj Add Ryu image here)
+### Ryu 
+```
+cd components/host-container
+cat host.tar.a? > host.tar
+
+```
 
 # Fireup the containers
 `sudo docker-compose up -d`
